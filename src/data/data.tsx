@@ -12,7 +12,6 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/hanoi-background-2.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -25,7 +24,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/profile.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -44,8 +43,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Tuan\'s Website',
+  description: "Personal website by Tuan To",
 };
 
 /**
@@ -103,14 +102,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a receptive and solution-oriented person that loves challenges. I think that challenges are
+  what keeps us going in life, and without them, life would be boring and repetitive. I also like to research deeply about
+  the things that I am interested in (such as my hobby in technology and custom mechanical keyboards).`,
   aboutItems: [
     {label: 'Location', text: 'Montreal, QC', Icon: MapIcon},
     {label: 'Age', text: '21', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Vietnamese', Icon: FlagIcon},
-    {label: 'Interests', text: 'Technology, Custom Keyboard, Puzzles', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Software development, data analysis', Icon: SparklesIcon},
     {label: 'Study', text: 'Concordia University', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Full-time student', Icon: OfficeBuildingIcon},
   ],
@@ -128,63 +127,63 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Vietnamese',
+        level: 10,
       },
       {
-        name: 'Spanish',
+        name: 'French',
         level: 3,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Data Engineer',
     skills: [
       {
-        name: 'React',
-        level: 9,
+        name: 'MySQL Database',
+        level: 8,
       },
       {
-        name: 'Typescript',
+        name: 'Postgres SQL',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'Python',
+        level: 9,
+      },
+    ],
+  },
+  {
+    name: 'Machine Learning',
+    skills: [
+      {
+        name: 'Pandas Library',
+        level: 8,
+      },
+      {
+        name: 'SciPy Library',
+        level: 6,
+      },
+      {
+        name: 'Numpy Library',
         level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Software Development',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
+        name: 'C/C++',
+        level: 7,
       },
       {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
+        name: 'Java',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
+        name: 'Javascript',
+        level: 5,
       },
     ],
   },
@@ -267,40 +266,59 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'September 2019 - December 2023',
+    location: 'Concordia University',
+    title: 'Computer Science Undergraduate',
+    content: <p>Even though I am enthusiastic about data engineering and data analytics, I got to learn
+      a lot of beautiful things regarding computer architecture and backend development. Software development 
+      is like solving puzzles for me, and I love getting involved in programming projects!
+    </p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'January - April 2022',
+    location: 'Bombardier Aerospace',
+    title: 'BIS Operations Architect',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>Analyzed Bombardier's software lifecycles and built a report for infrastructure management</li>
+        <li>Built a Machine Learning model to clean data, with up to 84% accuracy</li>
+        <li>Deployed database monitoring software for production database</li>
+        <li>Learned about server designs and database architecture at a high level</li>
+        <li>Took part in IT Infrastructure team meetings and learned more about project management</li>
+        <li>Established linkage between different teams to solve problem at hand</li>
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'September - December 2021',
+    location: 'Concordia University',
+    title: 'Service Desk Operator',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>Processed tickets and troubleshot computer software</li>
+        <li>Configured network ports for static IP machines</li>
+        <li>Worked with Windows Remote Desktop and Line Printer Remote (LPR)</li>
+        <li>Gained experience in technical support and computer networking</li>
+        <li>Learned how to communicate effectively between teams and honed solution-oriented mindset</li>
+        <li>Put into practice the KanBan Agile model</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'June - August 2021',
+    location: 'Bombardier Aerospace',
+    title: 'Technical Specialist',
+    content: (
+      <ul>
+        <li>Updated Bombardier's logistic database</li>
+        <li>Provided software and hardware support for Bombardier employees</li>
+        <li>Diagnosed and refurbished 100 laptops for Bombardier</li>
+        <li>Actively organized the workspace and kept things in order</li>
+        <li>Gained experience in customer support and customer service</li>
+      </ul>
     ),
   },
 ];
