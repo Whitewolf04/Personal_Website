@@ -330,45 +330,61 @@ export const experience: TimelineItem[] = [
 export const project: TimelineItem[] = [
   {
     date: 'Jan - Apr 2022',
-    location: 'Bombardier Aerospace',
+    location: 'Bombardier internship',
+    title: 'Automated Data Cleaning',
+    content: (
+      <ul className='list-disc pl-5 lg:pl-3'>
+        <li><span className='font-bold italic'>Languages & libraries: </span>Python, Pandas, Sklearn</li>
+        <li>Vectorized hand-inputted text data into numbers using TF-IDF from Scikit Learn</li>
+        <li>Trained Decision Tree for each data feature using DecisionTreeClassifier from Scikit Learn</li>
+        <li>Experimented with multiple Machine Learning models, and understand more about data wrangling workflow</li>
+        <li>Gained experience in self-managing a data science project and finding the right resources for self-learning</li>
+        <li>Helped Bombardier IT team get a better look on current hardware and software lifecycle</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Fall Semester 2022',
+    location: 'Software Engineering course',
     title: 'Book Project website',
     content: (
       <ul className='list-disc pl-5 lg:pl-3'>
-        <li>Analyzed Bombardier's software lifecycles and built a report for infrastructure management</li>
-        <li>Built a Machine Learning model to clean data, with up to 84% accuracy</li>
-        <li>Deployed database monitoring software for production database</li>
-        <li>Learned about server designs and database architecture at a high level</li>
-        <li>Took part in IT Infrastructure team meetings and learned more about project management</li>
-        <li>Established linkage between different teams to solve problem at hand</li>
+        <li><span className='font-bold italic'>Languages: </span>C#, PHP, SQL</li>
+        <li>In a team of 6, planned out requirements and created software models to add extensions to the Book Project website</li>
+        <li>Created UML diagrams for requirements modeling and component design</li>
+        <li>Designed the recommendation feature for the website using score system</li>
+        <li>Deployed the website using Unity WebGL library</li>
+        <li>Created an SQL database and connect it to Unity WebGL</li>
+        <li>Put into practice the Scrum process model while working in the team</li>
       </ul>
     ),
   },
   {
-    date: 'Sep - Dec 2021',
-    location: 'Concordia University',
-    title: 'Service Desk Operator',
+    date: 'Fall Semester 2021',
+    location: 'Advanced Programming course',
+    title: 'Warzone game',
     content: (
       <ul className='list-disc pl-5 lg:pl-3'>
-        <li>Processed tickets and troubleshot computer software</li>
-        <li>Configured network ports for static IP machines</li>
-        <li>Worked with Windows Remote Desktop and Line Printer Remote (LPR)</li>
-        <li>Gained experience in technical support and computer networking</li>
-        <li>Learned how to communicate effectively between teams and honed solution-oriented mindset</li>
-        <li>Put into practice the KanBan Agile model</li>
+        <li><span className='font-bold italic'>Languages: </span>C++</li>
+        <li>In a team of 5, created the Warzone strategic game using C++</li>
+        <li>Created game object classes using multiple inheritance schema in C++</li>
+        <li>Used Model-View-Controller model to communicate between components of the game</li>
+        <li>Practiced managing memory in a low-level programming language</li>
+        <li>Maintained communication between team members and ensured the quality of the product</li>
       </ul>
     ),
   },
   {
-    date: 'Jun - Aug 2021',
-    location: 'Bombardier Aerospace',
-    title: 'Technical Specialist',
+    date: 'Fall Semester 2021',
+    location: 'Database course',
+    title: 'SQL database for COVID-19 vaccination',
     content: (
       <ul className='list-disc pl-5 lg:pl-3'>
-        <li>Updated Bombardier's logistic database</li>
-        <li>Provided software and hardware support for Bombardier employees</li>
-        <li>Diagnosed and refurbished 100 laptops for Bombardier</li>
-        <li>Actively organized the workspace and kept things in order</li>
-        <li>Gained experience in customer support and customer service</li>
+        <li><span className='font-bold italic'>Languages: </span>SQL</li>
+        <li>In a team of 5, designed from scratch a database for COVID-19 vaccination tracking</li>
+        <li>Created relational diagrams to model the database and calculated functional dependencies between tables</li>
+        <li>Wrote SQL queries for user to easily access the database and acquire information</li>
+        <li>Deployed a website as frontend for accessing the database, and used drop down menu to represent the queries created</li>
       </ul>
     ),
   },
@@ -381,19 +397,19 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Simon Sinek',
+      text: 'No matter when or where, always bring your \'A\' game, because you never know when it will open doors for you.',
+      image: 'https://simonsinek.com/wp-content/uploads/2021/11/simons-bio-simon-crop.png',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Dr. Ernest Wong',
+      text: 'Practice doesn\'t make perfect. Perfect practice makes perfect execution.',
+      image: 'https://media.licdn.com/dms/image/C5603AQHDredbz_kmSw/profile-displayphoto-shrink_800_800/0/1516882588692?e=2147483647&v=beta&t=B0pjnAxmnXJrdYtRJUzmktNXy8biygIrUfFH6joD930',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Tony Robbins',
+      text: 'There is no such thing as failure. There are only results.',
+      image: 'https://pbs.twimg.com/profile_images/1257396956881498114/Fj13PSh-_400x400.jpg',
     },
   ],
 };
