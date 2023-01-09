@@ -278,11 +278,11 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'January - April 2022',
+    date: 'Jan - Apr 2022',
     location: 'Bombardier Aerospace',
     title: 'BIS Operations Architect',
     content: (
-      <ul>
+      <ul className='list-disc pl-5 lg:pl-3'>
         <li>Analyzed Bombardier's software lifecycles and built a report for infrastructure management</li>
         <li>Built a Machine Learning model to clean data, with up to 84% accuracy</li>
         <li>Deployed database monitoring software for production database</li>
@@ -293,11 +293,11 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'September - December 2021',
+    date: 'Sep - Dec 2021',
     location: 'Concordia University',
     title: 'Service Desk Operator',
     content: (
-      <ul>
+      <ul className='list-disc pl-5 lg:pl-3'>
         <li>Processed tickets and troubleshot computer software</li>
         <li>Configured network ports for static IP machines</li>
         <li>Worked with Windows Remote Desktop and Line Printer Remote (LPR)</li>
@@ -308,11 +308,62 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'June - August 2021',
+    date: 'Jun - Aug 2021',
     location: 'Bombardier Aerospace',
     title: 'Technical Specialist',
     content: (
-      <ul>
+      <ul className='list-disc pl-5 lg:pl-3'>
+        <li>Updated Bombardier's logistic database</li>
+        <li>Provided software and hardware support for Bombardier employees</li>
+        <li>Diagnosed and refurbished 100 laptops for Bombardier</li>
+        <li>Actively organized the workspace and kept things in order</li>
+        <li>Gained experience in customer support and customer service</li>
+      </ul>
+    ),
+  },
+];
+
+
+/**
+ * Project section
+ */
+export const project: TimelineItem[] = [
+  {
+    date: 'Jan - Apr 2022',
+    location: 'Bombardier Aerospace',
+    title: 'Book Project website',
+    content: (
+      <ul className='list-disc pl-5 lg:pl-3'>
+        <li>Analyzed Bombardier's software lifecycles and built a report for infrastructure management</li>
+        <li>Built a Machine Learning model to clean data, with up to 84% accuracy</li>
+        <li>Deployed database monitoring software for production database</li>
+        <li>Learned about server designs and database architecture at a high level</li>
+        <li>Took part in IT Infrastructure team meetings and learned more about project management</li>
+        <li>Established linkage between different teams to solve problem at hand</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Sep - Dec 2021',
+    location: 'Concordia University',
+    title: 'Service Desk Operator',
+    content: (
+      <ul className='list-disc pl-5 lg:pl-3'>
+        <li>Processed tickets and troubleshot computer software</li>
+        <li>Configured network ports for static IP machines</li>
+        <li>Worked with Windows Remote Desktop and Line Printer Remote (LPR)</li>
+        <li>Gained experience in technical support and computer networking</li>
+        <li>Learned how to communicate effectively between teams and honed solution-oriented mindset</li>
+        <li>Put into practice the KanBan Agile model</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Jun - Aug 2021',
+    location: 'Bombardier Aerospace',
+    title: 'Technical Specialist',
+    content: (
+      <ul className='list-disc pl-5 lg:pl-3'>
         <li>Updated Bombardier's logistic database</li>
         <li>Provided software and hardware support for Bombardier employees</li>
         <li>Diagnosed and refurbished 100 laptops for Bombardier</li>
