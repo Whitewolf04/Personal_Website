@@ -1,7 +1,6 @@
 // import {ExternalLinkIcon} from '@heroicons/react/outline';
 // import classNames from 'classnames';
 // import Image from 'next/image';
-import TimelineItem from './Resume/TimelineItem';
 // import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
 import {FC, memo} from 'react';
 
@@ -11,6 +10,7 @@ import {project, SectionId} from '../../data/data';
 // import {PortfolioItem} from '../../data/dataDef';
 // import useDetectOutsideClick from '../../hooks/useDetectOutsideClick';
 import Section from '../Layout/Section';
+import {TimelineItemContainer} from './Resume/TimelineItem';
 
 const Portfolio: FC = memo(() => {
   return (
@@ -41,7 +41,7 @@ const Portfolio: FC = memo(() => {
       <h2 className="self-center text-xl font-bold text-white">Projects</h2>
       <div className="w-full gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-white">
         {project.map((item, index) => (
-            <TimelineItem item={item} key={`${item.title}-${index}`} />
+            <TimelineItemContainer item={item} key={`${item.title}-${index}`} />
           ))}
       </div>
     </div>
