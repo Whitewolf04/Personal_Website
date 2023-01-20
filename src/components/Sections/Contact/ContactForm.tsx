@@ -1,4 +1,5 @@
-import {FC, memo, useCallback, useMemo, useState} from 'react';
+import emailjs from '@emailjs/browser';
+import {FC, memo, useCallback, useMemo, useRef, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -16,6 +17,8 @@ const ContactForm: FC = memo(() => {
     [],
   );
 
+  const form = useRef<HTMLFormElement>(null);
+
   const [data, setData] = useState<FormData>(defaultData);
 
   const onChange = useCallback(
@@ -32,9 +35,17 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
+
+      const formData = form.current;
+      if(formData){
+        emailjs.sendForm('service_pejanqo', 'template_wdnain6', formData, 'W0WaWfpormaZlRMBk')
+        .then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        }, (err) => {
+          console.log('FAILED...', err);
+        });
+      }
+      
       console.log('Data to send: ', data);
     },
     [data],
@@ -44,7 +55,7 @@ const ContactForm: FC = memo(() => {
     'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
 
   return (
-    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
+    <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage} ref={form}>
       <input className={inputClasses} name="name" onChange={onChange} placeholder="Name" required type="text" />
       <input
         autoComplete="email"

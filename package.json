@@ -12,6 +12,7 @@
     "sitemap": "yarn next-sitemap"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
     "autoprefixer": "^10.4.2",
@@ -19,6 +20,7 @@
     "next": "^12.1.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "sharp": "^0.31.3",
     "ts-pattern": "^4.0.3",
     "yarn": "^1.22.19"
   },
