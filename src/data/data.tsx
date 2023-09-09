@@ -61,19 +61,19 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Data Engineer/Analyst</strong>, currently studying
+        I'm a <strong className="text-stone-100">Software Engineer</strong>, currently studying
         at <strong className="text-stone-100">Concordia University</strong> as an undergraduate 
         in <strong className="text-stone-100">Computer Science</strong>. I am located in Montreal, 
         but I am willing to relocate to Toronto for any opportunity!
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I am looking for an amazing summer internship! Please feel free to reach out.
+        I am looking for new software engineering opportunities starting January 2024! Please feel free to reach out.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -96,7 +96,7 @@ export const aboutData: About = {
   the things that I am interested in (such as my hobby in technology and custom mechanical keyboards).`,
   aboutItems: [
     {label: 'Location', text: 'Montreal, QC', Icon: MapIcon},
-    {label: 'Age', text: '21', Icon: CalendarIcon},
+    {label: 'Age', text: '22', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Vietnamese', Icon: FlagIcon},
     {label: 'Interests', text: 'Software development, data analysis', Icon: SparklesIcon},
     {label: 'Study', text: 'Concordia University', Icon: AcademicCapIcon},
