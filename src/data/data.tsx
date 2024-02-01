@@ -73,7 +73,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: './resume.pdf',
+      href: '/testing/xyz/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -195,17 +195,29 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'Jan - Apr 2022',
-    location: 'Bombardier Aerospace',
-    title: 'BIS Operations Architect',
+    date: 'May - Dec 2023',
+    location: 'Alstom',
+    title: 'TCMS Verification & Test Engineer',
     content: (
       <ul className='list-disc pl-5 lg:pl-3'>
-        <li>Analyzed Bombardier's software lifecycles and built a report for infrastructure management</li>
-        <li>Built a Machine Learning model to clean data, with up to 84% accuracy</li>
-        <li>Deployed database monitoring software for production database</li>
-        <li>Learned about server designs and database architecture at a high level</li>
-        <li>Took part in IT Infrastructure team meetings and learned more about project management</li>
-        <li>Established linkage between different teams to solve problem at hand</li>
+        <li>Developed a multi-threaded Python application to simulate a micro-controller and help the company save on new equipment</li>
+        <li>Automated 100 test cases using Python, Bash script, batch file, and PLC to streamline the testing process</li>
+        <li>Created an automatically generated HTML dashboard on Jenkins to facilitate reporting to managers</li>
+        <li>Deployed the Jenkins dashboard on 7 projects and increased the efficiencies</li>
+        <li>Debugged C++ code for train control system to ensure quality delivery to the customer</li>
+        <li>Acted as the Scrum master and led the verification & test team for 3 weeks</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Jan - Apr 2022',
+    location: 'Bombardier Aerospace',
+    title: 'BIS Operations Architect Junior',
+    content: (
+      <ul className='list-disc pl-5 lg:pl-3'>
+        <li>Analyzed Bombardier's software lifecycles and built an automated report using Power BI</li>
+        <li>Built a Machine Learning model to minimize manual data cleaning and increase efficiency in software lifecycle management</li>
+        <li>Deployed database monitoring software (Datadog) to ODBC servers and detect abnormal behaviors in server usage</li>
       </ul>
     ),
   },
@@ -215,12 +227,9 @@ export const experience: TimelineItem[] = [
     title: 'Service Desk Operator',
     content: (
       <ul className='list-disc pl-5 lg:pl-3'>
-        <li>Processed tickets and troubleshot computer software</li>
-        <li>Configured network ports for static IP machines</li>
-        <li>Worked with Windows Remote Desktop and Line Printer Remote (LPR)</li>
-        <li>Gained experience in technical support and computer networking</li>
-        <li>Learned how to communicate effectively between teams and honed solution-oriented mindset</li>
-        <li>Put into practice the KanBan Agile model</li>
+        <li>Troubleshot computer software by researching on the spot</li>
+        <li>Configured network ports for static IP machines using Windows Command Line Interface</li>
+        <li>Monitored computer registration and network via SSH connection with PuTTy</li>
       </ul>
     ),
   },
@@ -230,11 +239,9 @@ export const experience: TimelineItem[] = [
     title: 'Technical Specialist',
     content: (
       <ul className='list-disc pl-5 lg:pl-3'>
-        <li>Updated Bombardier's logistic database</li>
         <li>Provided software and hardware support for Bombardier employees</li>
         <li>Diagnosed and refurbished 100 laptops for Bombardier</li>
         <li>Actively organized the workspace and kept things in order</li>
-        <li>Gained experience in customer support and customer service</li>
       </ul>
     ),
   },
@@ -246,33 +253,71 @@ export const experience: TimelineItem[] = [
  */
 export const project: TimelineItem[] = [
   {
-    date: 'Jan - Apr 2022',
-    location: 'Bombardier internship',
-    title: 'Automated Data Cleaning',
+    date: 'Dec. 2023 - Present',
+    location: 'HobbyHop Start-up Company',
+    title: 'Backend Software Developer',
     content: (
       <ul className='list-disc pl-5 lg:pl-3'>
-        <li><span className='font-bold italic'>Languages & libraries: </span>Python, Pandas, Sklearn</li>
-        <li>Vectorized hand-inputted text data into numbers using TF-IDF from Scikit Learn</li>
-        <li>Trained Decision Tree for each data feature using DecisionTreeClassifier from Scikit Learn</li>
-        <li>Experimented with multiple Machine Learning models, and understand more about data wrangling workflow</li>
-        <li>Gained experience in self-managing a data science project and finding the right resources for self-learning</li>
-        <li>Helped Bombardier IT team get a better look on current hardware and software lifecycle</li>
+        <li><span className='font-bold italic'>Technologies: </span>AWS, REST API, Bubble.io</li>
+        <li>Created the HobbyHop website, a place where people can share their hobby gears with their local community</li>
+        <li>Responsible for the backend logic, ensuring safe and secure transactions for clients</li>
+        <li>Created AWS REST API gateway to transfer data between the website and AWS S3 database</li>
       </ul>
     ),
   },
   {
-    date: 'Fall Semester 2022',
+    date: 'Sep. - Dec. 2023',
+    location: 'Web Enterprise Application course',
+    title: 'TapTapGo keyboard vendor website',
+    content: (
+      <ul className='list-disc pl-5 lg:pl-3'>
+        <li><span className='font-bold italic'>Technologies: </span>Java, Java Servlet Page (JSP), MySQL, SQLite, Shell script, Maven, Tomcat Apache</li>
+        <li>Developed a keyboard vendor website with client and product management functionalities for staff</li>
+        <li>Integrated a MySQL database server to the application using JDBC connector</li>
+        <li>Communicate effectively with teammate to adapt to sudden changes in the requirements (from MySQL to SQLite)</li>
+        <li>Wrote a shell script to facilitate one-click deploy for the whole team</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Jan. - Apr. 2023',
+    location: 'Compiler Design course',
+    title: 'Moon Compiler',
+    content: (
+      <ul className='list-disc pl-5 lg:pl-3'>
+        <li><span className='font-bold italic'>Technologies: </span>Java, Assembly, OOP Design Pattern</li>
+        <li>Developed a compiler that transforms human-readable code to assembly code</li>
+        <li>Designed the compiler using Composite and Visitor patterns</li>
+        <li>Implemented an assembly code generator that can handle multi-dimensional arrays and object-oriented operations with inspiration from the C programming language</li>
+        <li>Put in all effort possible to complete the project in a tight deadline</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Jan. - Apr. 2023',
+    location: 'Computer Network course',
+    title: 'Video Streaming App',
+    content: (
+      <ul className='list-disc pl-5 lg:pl-3'>
+        <li><span className='font-bold italic'>Technologies: </span>JavaScript, Shell script, MySQL, PHP, Video Encoding</li>
+        <li>Developed a web-based video streaming app using JavaScript and the LAMP staack (Linux, Apache, MySQL, PHP)</li>
+        <li>Integrated DASH library to enable variable quality video streaming that adapts to the network connection quality</li>
+        <li>Wrote a shell script on the server-side to automatically encode video using ffmpeg and segment them</li>
+        <li>Wrote a shell script to automatically compile a DASH playlist for all uploaded videos</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Sep. - Dec. 2022',
     location: 'Software Engineering course',
     title: 'Book Project website',
     content: (
       <ul className='list-disc pl-5 lg:pl-3'>
-        <li><span className='font-bold italic'>Languages: </span>C#, PHP, SQL</li>
+        <li><span className='font-bold italic'>Technologies: </span>C#, PHP, MySQL, UML, JavaScript</li>
         <li>In a team of 6, planned out requirements and created software models to add extensions to the Book Project website</li>
-        <li>Created UML diagrams for requirements modeling and component design</li>
-        <li>Designed the recommendation feature for the website using score system</li>
-        <li>Deployed the website using Unity WebGL library</li>
-        <li>Created an SQL database and connect it to Unity WebGL</li>
-        <li>Put into practice the Scrum process model while working in the team</li>
+        <li>Designed the recommendation feature for the website with C#</li>
+        <li>Created a MySQL database server and stored serialized object data in JSON format</li>
+        <li>Created a PHP and JavaScript script to connect the web app to MySQL database server</li>
       </ul>
     ),
   },
@@ -282,26 +327,10 @@ export const project: TimelineItem[] = [
     title: 'Warzone game',
     content: (
       <ul className='list-disc pl-5 lg:pl-3'>
-        <li><span className='font-bold italic'>Languages: </span>C++</li>
+        <li><span className='font-bold italic'>Technologies: </span>C++, OOP Design Patterns</li>
         <li>In a team of 5, created the Warzone strategic game using C++</li>
         <li>Created game object classes using multiple inheritance schema in C++</li>
         <li>Used Model-View-Controller model to communicate between components of the game</li>
-        <li>Practiced managing memory in a low-level programming language</li>
-        <li>Maintained communication between team members and ensured the quality of the product</li>
-      </ul>
-    ),
-  },
-  {
-    date: 'Fall Semester 2021',
-    location: 'Database course',
-    title: 'SQL database for COVID-19 vaccination',
-    content: (
-      <ul className='list-disc pl-5 lg:pl-3'>
-        <li><span className='font-bold italic'>Languages: </span>SQL</li>
-        <li>In a team of 5, designed from scratch a database for COVID-19 vaccination tracking</li>
-        <li>Created relational diagrams to model the database and calculated functional dependencies between tables</li>
-        <li>Wrote SQL queries for user to easily access the database and acquire information</li>
-        <li>Deployed a website as frontend for accessing the database, and used drop down menu to represent the queries created</li>
       </ul>
     ),
   },
