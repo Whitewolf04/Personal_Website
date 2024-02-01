@@ -39,7 +39,7 @@ const Portfolio: FC = memo(() => {
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
     <div className="flex flex-col gap-y-8">
       <h2 className="self-center text-xl font-bold text-white">Projects</h2>
-      <div className="w-full gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-white">
+      <div className="w-full gap-x-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-white">
         {project.map((item, index) => (
             <TimelineItemContainer item={item} key={`${item.title}-${index}`} />
           ))}

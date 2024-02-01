@@ -61,8 +61,8 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Software Engineer</strong>, currently studying
-        at <strong className="text-stone-100">Concordia University</strong> as an undergraduate 
+        I'm a <strong className="text-stone-100">Software Engineer</strong>, recently graduated 
+        from <strong className="text-stone-100">Concordia University</strong> with a degree 
         in <strong className="text-stone-100">Computer Science</strong>. I am located in Montreal, 
         but I am willing to relocate to Toronto for any opportunity!
       </p>
@@ -73,7 +73,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/testing/xyz/resume.pdf',
+      href: '/asset/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -98,9 +98,9 @@ export const aboutData: About = {
     {label: 'Location', text: 'Montreal, QC', Icon: MapIcon},
     {label: 'Age', text: '22', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Vietnamese', Icon: FlagIcon},
-    {label: 'Interests', text: 'Software development, data analysis', Icon: SparklesIcon},
+    {label: 'Interests', text: 'Software development', Icon: SparklesIcon},
     {label: 'Study', text: 'Concordia University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Full-time student', Icon: OfficeBuildingIcon},
+    {label: 'Employment', text: 'N/A', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -116,12 +116,8 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'Vietnamese',
-        level: 10,
-      },
-      {
         name: 'French',
-        level: 3,
+        level: 5,
       },
     ],
   },
@@ -163,15 +159,15 @@ export const skills: SkillGroup[] = [
     name: 'Software Development',
     skills: [
       {
-        name: 'C/C++',
-        level: 7,
+        name: 'Python',
+        level: 9,
       },
       {
         name: 'Java',
         level: 9,
       },
       {
-        name: 'Javascript',
+        name: 'C/C++',
         level: 5,
       },
     ],
@@ -254,7 +250,7 @@ export const experience: TimelineItem[] = [
 export const project: TimelineItem[] = [
   {
     date: 'Dec. 2023 - Present',
-    location: 'HobbyHop Start-up Company',
+    location: 'HobbyHop Start-up',
     title: 'Backend Software Developer',
     content: (
       <ul className='list-disc pl-5 lg:pl-3'>
@@ -267,7 +263,7 @@ export const project: TimelineItem[] = [
   },
   {
     date: 'Sep. - Dec. 2023',
-    location: 'Web Enterprise Application course',
+    location: 'Web Enterprise App course',
     title: 'TapTapGo keyboard vendor website',
     content: (
       <ul className='list-disc pl-5 lg:pl-3'>
@@ -322,7 +318,7 @@ export const project: TimelineItem[] = [
     ),
   },
   {
-    date: 'Fall Semester 2021',
+    date: 'Sep. - Dec. 2021',
     location: 'Advanced Programming course',
     title: 'Warzone game',
     content: (
